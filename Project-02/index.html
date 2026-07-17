@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nexora Digital — a modern product & web design agency building fast, accessible, responsive digital experiences." />
+  <title>Nexora Digital | Modern Web &amp; Product Design Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Nexora Digital home">
+        <span class="logo-mark" aria-hidden="true">N</span>
+        <span class="logo-text">Nexora<span class="logo-accent">Digital</span></span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="hamburger-btn" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Digital Product Studio</p>
+          <h1 id="hero-heading">We design &amp; build interfaces people actually enjoy using.</h1>
+          <p class="hero-lead">
+            Nexora Digital partners with startups and growth-stage teams to ship fast,
+            accessible, pixel-perfect web experiences — from first wireframe to production launch.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+            <a href="#work" class="btn btn-secondary">View Our Work</a>
+          </div>
+          <dl class="hero-stats">
+            <div class="stat">
+              <dt>Projects Shipped</dt>
+              <dd>120+</dd>
+            </div>
+            <div class="stat">
+              <dt>Client Retention</dt>
+              <dd>96%</dd>
+            </div>
+            <div class="stat">
+              <dt>Avg. Launch Time</dt>
+              <dd>6 wks</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&h=900&q=80"
+            alt="Designer reviewing a responsive web interface on a laptop screen"
+            width="800"
+            height="900"
+            loading="lazy"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&h=520&q=80"
+            alt="Cross-functional product team collaborating around a table with laptops"
+            width="700"
+            height="520"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-content">
+          <p class="eyebrow">Who We Are</p>
+          <h2 id="about-heading">A small team, obsessed with craft.</h2>
+          <p>
+            Founded in 2019, Nexora Digital is a boutique studio of designers and engineers
+            who believe great software is built at the intersection of clarity, performance,
+            and empathy for the end user. We don't do templates — every layout is engineered
+            for the content it carries.
+          </p>
+          <ul class="check-list">
+            <li>Semantic, accessible HTML5 by default</li>
+            <li>Mobile-first, fluid responsive systems</li>
+            <li>Performance budgets on every build</li>
+            <li>WCAG 2.1 AA compliance as a baseline</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What We Do</p>
+          <h2 id="services-heading">End-to-end product &amp; web design</h2>
+          <p class="section-lead">From strategy to shipped code — we cover the full lifecycle of a modern digital product.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎨</div>
+            <h3>UI / UX Design</h3>
+            <p>Research-driven interfaces built in Figma and validated with real users before a single line of code ships.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💻</div>
+            <h3>Frontend Engineering</h3>
+            <p>Semantic, responsive, accessible builds using modern CSS Grid, Flexbox, and progressive enhancement.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⚙️</div>
+            <h3>Design Systems</h3>
+            <p>Reusable component libraries and token-based design systems that scale cleanly across products.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🚀</div>
+            <h3>Performance Audits</h3>
+            <p>Core Web Vitals, CLS elimination, and load-time optimization for sites that already exist.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📱</div>
+            <h3>Responsive Strategy</h3>
+            <p>Fluid, breakpoint-aware layouts engineered mobile-first and stress-tested across real devices.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🔍</div>
+            <h3>Accessibility Review</h3>
+            <p>Keyboard navigation, ARIA correctness, and screen-reader testing baked into every deliverable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK / PORTFOLIO ============ -->
+    <section class="work" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="work-heading">Projects we're proud of</h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-item work-item--large">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&h=650&q=80"
+              alt="Analytics dashboard interface displayed on a desktop monitor"
+              width="1000"
+              height="650"
+              loading="lazy"
+            />
+            <div class="work-caption">
+              <h3>Fintech Analytics Dashboard</h3>
+              <p>A real-time reporting suite for a Series B fintech, rebuilt with a fluid grid system.</p>
+              <span class="tag">Web App</span>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <img
+              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=700&h=520&q=80"
+              alt="Mobile e-commerce app interface mockup"
+              width="700"
+              height="520"
+              loading="lazy"
+            />
+            <div class="work-caption">
+              <h3>Commerce Storefront</h3>
+              <p>Headless storefront with a 40% improvement in mobile conversion.</p>
+              <span class="tag">E-commerce</span>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&h=520&q=80"
+              alt="Developer working on a code editor with a responsive layout preview"
+              width="700"
+              height="520"
+              loading="lazy"
+            />
+            <div class="work-caption">
+              <h3>Developer Tools Landing Page</h3>
+              <p>A marketing site engineered for sub-1s load times on 3G connections.</p>
+              <span class="tag">Marketing Site</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Client Feedback</p>
+          <h2 id="testimonials-heading">What partners say about working with us</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card">
+            <p>"Nexora rebuilt our entire frontend in six weeks. The site is faster, cleaner, and finally works properly on mobile."</p>
+            <footer>
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Portrait of Sarah Malik, Head of Product"
+                width="100"
+                height="100"
+                loading="lazy"
+                class="avatar"
+              />
+              <div>
+                Sarah Malik
+                <span>Head of Product, Fintra</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p>"Their attention to accessibility and semantic markup saved us months of rework down the line. Genuinely senior-level engineering."</p>
+            <footer>
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Portrait of Daniel Cho, Engineering Lead"
+                width="100"
+                height="100"
+                loading="lazy"
+                class="avatar"
+              />
+              <div>
+                Daniel Cho
+                <span>Engineering Lead, Vela</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p>"From the first call to launch, communication was clear and the responsive build worked flawlessly across every device we tested."</p>
+            <footer>
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&h=100&q=80"
+                alt="Portrait of Amara Osei, Founder"
+                width="100"
+                height="100"
+                loading="lazy"
+                class="avatar"
+              />
+              <div>
+                Amara Osei
+                <span>Founder, Loop Health</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / CTA ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <p class="eyebrow">Let's Talk</p>
+          <h2 id="contact-heading">Have a project in mind?</h2>
+          <p>Tell us a bit about what you're building. We reply to every inquiry within one business day.</p>
+          <ul class="contact-info">
+            <li><strong>Email:</strong> hello@nexoradigital.com</li>
+            <li><strong>Phone:</strong> +1 (555) 019-4420</li>
+            <li><strong>Studio:</strong> Remote-first, worldwide</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <span class="logo-mark" aria-hidden="true">N</span>
+          <span class="logo-text">Nexora<span class="logo-accent">Digital</span></span>
+        </a>
+        <p>Building fast, accessible, beautiful web experiences.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">UI / UX Design</a></li>
+            <li><a href="#services">Frontend Engineering</a></li>
+            <li><a href="#services">Design Systems</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#contact">Get in Touch</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Nexora Digital. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

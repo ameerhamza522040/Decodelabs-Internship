@@ -1,0 +1,347 @@
+/* ==========================================================================
+   CSS CUSTOM PROPERTIES & VARIABLES
+   ========================================================================== */
+:root {
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-text-main: #1e293b;
+    --color-text-muted: #64748b;
+    --color-bg-light: #f8fafc;
+    --color-bg-white: #ffffff;
+    --color-drafting-blue: #0f172a; /* Blueprint 'Drafting Blue' */
+    --color-border: #e2e8f0;
+    
+    --font-primary: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    --max-content-width: 1200px;
+    --transition-standard: all 0.3s ease;
+}
+
+/* ==========================================================================
+   BASE RESET & ACCESSIBILITY SETUP
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    scroll-padding-top: 80px; /* Offset spacing prevents sticky header overlap */
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-text-main);
+    background-color: var(--color-bg-light);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ==========================================================================
+   HEADER NAV (FLEXBOX / MICRO-ALIGNMENT)
+   ========================================================================== */
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: var(--color-bg-white);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__container {
+    max-width: var(--max-content-width);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    color: var(--color-drafting-blue);
+}
+
+.logo-text strong {
+    color: var(--color-primary);
+}
+
+.navigation__list {
+    display: flex;
+    gap: 32px;
+}
+
+.navigation__link {
+    font-weight: 500;
+    color: var(--color-text-main);
+    font-size: 0.95rem;
+    transition: var(--transition-standard);
+}
+
+.navigation__link:hover {
+    color: var(--color-primary);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-container {
+    min-height: 60vh;
+    background: radial-gradient(circle at top right, #eff6ff, #f8fafc);
+    display: flex;
+    align-items: center;
+    padding: 120px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.hero__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.hero__headline {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--color-drafting-blue);
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.hero__subheading {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   BUTTONS (DRY COMPONENT BLUEPRINT)
+   ========================================================================== */
+.button {
+    display: inline-block;
+    padding: 12px 32px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: var(--transition-standard);
+    cursor: pointer;
+}
+
+.button--primary {
+    background-color: var(--color-primary);
+    color: var(--color-bg-white);
+}
+
+.button--primary:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+}
+
+.button--secondary {
+    background-color: var(--color-drafting-blue);
+    color: var(--color-bg-white);
+}
+
+.button--secondary:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   CONTENT SECTION & MACRO GRID (CSS GRID Layout)
+   ========================================================================== */
+.content-section {
+    padding: 120px 0;
+    background-color: var(--color-bg-white);
+}
+
+.content-section__container {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-drafting-blue);
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px; /* Matches specs gutter layouts */
+}
+
+/* Card Component Design */
+.card {
+    background-color: var(--color-bg-light);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: var(--transition-standard);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-color: var(--color-primary);
+}
+
+.card__image-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background-color: var(--color-border);
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-standard);
+}
+
+.card:hover .card__image {
+    transform: scale(1.05);
+}
+
+.card__body {
+    padding: 24px;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-drafting-blue);
+    margin-bottom: 12px;
+}
+
+.card__text {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   LINKS SECTION
+   ========================================================================== */
+.links-section {
+    background-color: var(--color-bg-light);
+    padding: 120px 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.links-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* ==========================================================================
+   FOOTER (DRAFTING BLUE BACKGROUND)
+   ========================================================================== */
+.footer {
+    background-color: var(--color-drafting-blue);
+    color: var(--color-bg-light);
+    padding: 80px 0 40px 0;
+}
+
+.footer__container {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer__brand {
+    max-width: 320px;
+}
+
+.footer__brand .logo-text {
+    color: var(--color-bg-white);
+}
+
+.footer__tagline {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 12px;
+}
+
+.contact-info__title {
+    font-size: 1.1rem;
+    color: var(--color-bg-white);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-info__list li {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 12px;
+}
+
+.footer__bottom {
+    max-width: var(--max-content-width);
+    margin: 60px auto 0 auto;
+    padding: 30px 24px 0 24px;
+    border-top: 1px solid #1e293b;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVE ARCHITECTURE)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .hero__headline {
+        font-size: 2.25rem;
+    }
+    
+    .hero-container {
+        padding: 80px 0;
+    }
+    
+    .footer__container {
+        flex-direction: column;
+    }
+}

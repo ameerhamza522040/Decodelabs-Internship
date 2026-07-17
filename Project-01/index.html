@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DecodeLabs | Static Webpage Design</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Component -->
+    <header class="header">
+      <div class="header__container">
+        <div class="logo-container">
+          <span class="logo-text">Decode<strong>Labs</strong></span>
+        </div>
+        <nav class="navigation" aria-label="Main Navigation">
+          <ul class="navigation__list">
+            <li><a href="#hero" class="navigation__link">Home</a></li>
+            <li><a href="#services" class="navigation__link">Services</a></li>
+            <li>
+              <a href="#portfolio-links" class="navigation__link">Links</a>
+            </li>
+            <li><a href="#contact" class="navigation__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section (Home Link Target) -->
+      <section id="hero" class="hero-container">
+        <div class="hero__content">
+          <h1 class="hero__headline">
+            Building the Future of Software Engineering
+          </h1>
+          <p class="hero__subheading">
+            A static layout designed with semantic integrity, strict visual
+            architecture, and pixel-perfect rendering.
+          </p>
+          <a href="#services" class="button button--primary"
+            >Explore Projects</a
+          >
+        </div>
+      </section>
+
+      <!-- Content Grid Section (Services Link Target) -->
+      <section id="services" class="content-section">
+        <div class="content-section__container">
+          <h2 class="section-title">Our Industrial Portfolios</h2>
+
+          <div class="content-grid">
+            <!-- Card 1 -->
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop"
+                  alt="Workspace setup displaying code on a screen"
+                  class="card__image"
+                  width="288"
+                  height="180"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Software Architecture</h3>
+                <p class="card__text">
+                  Mastering the underlying design patterns that enable systems
+                  to scale systematically over time.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=300&fit=crop"
+                  alt="Clean code interface with syntax highlighting"
+                  class="card__image"
+                  width="288"
+                  height="180"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Clean Code Practices</h3>
+                <p class="card__text">
+                  Writing human-readable, self-documenting code built on logical
+                  principles and machine efficiency.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=400&h=300&fit=crop"
+                  alt="UI design blueprint and layout wireframe"
+                  class="card__image"
+                  width="288"
+                  height="180"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Visual Integrity</h3>
+                <p class="card__text">
+                  Implementing clean user interfaces adhering to spacing guides,
+                  aspect ratios, and design guidelines.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                  alt="Data visualization charts on a monitor screen"
+                  class="card__image"
+                  width="288"
+                  height="180"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">System Optimization</h3>
+                <p class="card__text">
+                  Ensuring low latency, optimized assets, and clean
+                  accessibility markers across all displays.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Links Section (Links Link Target) -->
+      <section id="portfolio-links" class="links-section">
+        <div class="content-section__container">
+          <h2 class="section-title">Reference Links</h2>
+          <div class="links-buttons">
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="button button--secondary"
+              >GitHub Profile</a
+            >
+            <a
+              href="https://decodelabs.tech"
+              target="_blank"
+              class="button button--primary"
+              >DecodeLabs Main Site</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Component (Contact Link Target) -->
+    <footer id="contact" class="footer">
+      <div class="footer__container">
+        <div class="footer__brand">
+          <span class="logo-text">Decode<strong>Labs</strong></span>
+          <p class="footer__tagline">
+            Engineering Foundations & Structural Design
+          </p>
+        </div>
+        <div class="contact-info">
+          <h4 class="contact-info__title">Contact Information</h4>
+          <ul class="contact-info__list">
+            <li>📍 Greater Lucknow, India</li>
+            <li>✉️ decodelabs.tech@gmail.com</li>
+            <li>📞 +91 89330 06408</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 DecodeLabs. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project 3 — Interactive Web Elements. A JavaScript-powered interactive page built for DecodeLabs Frontend Internship." />
+  <title>Project 3 | Interactive Web Elements — DecodeLabs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER + NAVIGATION
+       js-hamburger-btn = JS hook (JS listens on this)
+       is-open          = state class (CSS reacts to this)
+  ============================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Interactive<span>Kit</span></a>
+
+      <!-- This button is a JS HOOK. JavaScript will add a click listener to it. -->
+      <button class="hamburger-btn js-hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav js-main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#toggle-demo" class="nav-link">Toggle</a></li>
+          <li><a href="#counter-demo" class="nav-link">Counter</a></li>
+          <li><a href="#faq-demo" class="nav-link">FAQ</a></li>
+          <li><a href="#form-demo" class="nav-link">Form</a></li>
+
+          <!-- Dark mode toggle button (JS hook) -->
+          <li>
+            <button class="theme-toggle-btn js-theme-toggle" aria-label="Toggle dark mode">
+              🌙 <span class="js-theme-label">Dark Mode</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="top">
+
+    <!-- ============================================
+         SECTION 1: HERO
+    ============================================ -->
+    <section class="hero">
+      <p class="eyebrow">DecodeLabs · Project 3</p>
+      <h1>Interactive Web Elements</h1>
+      <p class="hero-lead">
+        This page is intentionally simple in design, so all your focus goes to
+        <strong>how JavaScript listens to user actions and updates the page live</strong> —
+        no page reloads needed.
+      </p>
+    </section>
+
+    <!-- ============================================
+         SECTION 2: TOGGLE / SHOW-HIDE DEMO
+         Requirement: "Buttons or toggles"
+    ============================================ -->
+    <section class="demo-card" id="toggle-demo">
+      <h2>1. Show / Hide Toggle</h2>
+      <p>Click the button below. JavaScript will add or remove the <code>is-visible</code> class on the box, and CSS handles the animation.</p>
+
+      <button class="btn btn-primary js-toggle-box-btn">
+        <span class="js-toggle-box-label">Show Details</span>
+      </button>
+
+      <div class="reveal-box js-reveal-box">
+        <p>🎉 Surprise! This content was hidden using CSS (<code>display: none</code>) and revealed by toggling a class with JavaScript's <code>classList.toggle()</code>.</p>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: COUNTER / STATE DEMO
+         Requirement: "Dynamic content update"
+    ============================================ -->
+    <section class="demo-card" id="counter-demo">
+      <h2>2. Live Counter (State Management)</h2>
+      <p>Every click updates a JavaScript variable (the "state"), and we push that new value onto the page using <code>textContent</code>.</p>
+
+      <div class="counter-widget">
+        <button class="btn btn-secondary js-decrement-btn" aria-label="Decrease count">−</button>
+        <span class="counter-value js-counter-value">0</span>
+        <button class="btn btn-primary js-increment-btn" aria-label="Increase count">+</button>
+      </div>
+
+      <button class="btn btn-text js-reset-btn">Reset Counter</button>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: ACCORDION / FAQ DEMO
+         Requirement: "Basic user interaction" + dynamic content
+    ============================================ -->
+    <section class="demo-card" id="faq-demo">
+      <h2>3. FAQ Accordion</h2>
+      <p>Click any question. Only one answer opens at a time — this demonstrates looping through elements and managing shared state.</p>
+
+      <!-- js-faq-item wraps each question/answer pair -->
+      <div class="faq-list">
+        <div class="faq-item js-faq-item">
+          <button class="faq-question js-faq-question">
+            What is the DOM?
+            <span class="faq-icon js-faq-icon">+</span>
+          </button>
+          <div class="faq-answer js-faq-answer">
+            <p>The DOM (Document Object Model) is the browser's live, in-memory tree representation of your HTML — JavaScript uses it to read and change what's on screen.</p>
+          </div>
+        </div>
+
+        <div class="faq-item js-faq-item">
+          <button class="faq-question js-faq-question">
+            Why use <code>textContent</code> instead of <code>innerHTML</code>?
+            <span class="faq-icon js-faq-icon">+</span>
+          </button>
+          <div class="faq-answer js-faq-answer">
+            <p><code>textContent</code> only inserts plain text — it's safe from Cross-Site Scripting (XSS) attacks. <code>innerHTML</code> can execute injected scripts, so it's avoided unless absolutely necessary.</p>
+          </div>
+        </div>
+
+        <div class="faq-item js-faq-item">
+          <button class="faq-question js-faq-question">
+            What does <code>addEventListener</code> do?
+            <span class="faq-icon js-faq-icon">+</span>
+          </button>
+          <div class="faq-answer js-faq-answer">
+            <p>It "wires" a function to an element so that function runs automatically whenever a chosen event (like a click) happens on that element.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: LIVE FORM VALIDATION DEMO
+         Requirement: dynamic content update based on input
+    ============================================ -->
+    <section class="demo-card" id="form-demo">
+      <h2>4. Live Form Feedback</h2>
+      <p>Type your name and email — the page reacts to your keystrokes in real time, before you even submit.</p>
+
+      <form class="mini-form js-mini-form" novalidate>
+        <div class="form-row">
+          <label for="nameInput">Full Name</label>
+          <input type="text" id="nameInput" class="js-name-input" placeholder="e.g. Ameer Hamza" />
+          <small class="field-hint js-name-hint"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="emailInput">Email Address</label>
+          <input type="email" id="emailInput" class="js-email-input" placeholder="e.g. you@example.com" />
+          <small class="field-hint js-email-hint"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full js-submit-btn" disabled>
+          Submit
+        </button>
+
+        <p class="form-success js-form-success">✅ Thanks! Your form was submitted successfully.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 DecodeLabs — Project 3: Interactive Web Elements</p>
+  </footer>
+
+  <!-- Our JavaScript file. Loaded at the END of body so the HTML exists
+       before JS tries to find/select elements. -->
+  <script src="script.js"></script>
+</body>
+</html>
