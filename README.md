@@ -176,7 +176,7 @@ No build steps, no dependencies — just clone and open.
 git clone https://github.com/ameerhamza522040/Decodelabs-Internship.git
  
 # Move into the repo
-cd Decodelabs
+cd Decodelabs-Internship
  
 # Open any project directly in your browser
 # e.g. Project-03
@@ -211,6 +211,6 @@ This project is intended for educational and internship-submission purposes.
 Feel free to reference it, but please avoid direct copying for your own coursework.
  
 <div align="center">
-**⭐ If you found this repo useful, consider giving it a star!**
+⭐ If you found this repo useful, consider giving it a star!
  
 </div>
