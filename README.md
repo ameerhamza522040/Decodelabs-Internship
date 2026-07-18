@@ -184,7 +184,7 @@ open index.html                     # macOS
 ## 👤 Author
  
 **Ameer Hamza**
-Software Engineering Student · Frontend Development Intern @ Appverse Technologies
+Software Engineering Student · Frontend Development Intern @ Decodelabs 
  
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ameerhamza522040)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
