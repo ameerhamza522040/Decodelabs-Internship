@@ -13,7 +13,7 @@ A collection of three progressively advanced front-end projects built with **pur
  
 </div>
 <br/>
-## 📖 Table of Contents
+📖 Table of Contents
  
 - [About](#-about)
 - [Projects](#-projects)
@@ -27,34 +27,46 @@ A collection of three progressively advanced front-end projects built with **pur
 - [Author](#-author)
 - [License](#-license)
 <br/>
-## 🧭 About
+🧭 About
  
 This repository documents my **Phase 1 — Web Foundations and JavaScript Mastery** internship track at **Appverse Technologies**, structured under the DecodeLabs learning path. Each project builds on the last: starting with static layout fundamentals, moving into a full multi-section responsive design system, and finishing with interactive, JavaScript-driven UI behavior.
  
 > 💡 Every project is self-contained — open its `index.html` directly in a browser, no setup required.
  
 <br/>
-## 🚀 Projects
+
+Projects
  
-### 📁 Project 01 — Static Webpage Design
+📁 Project 01 — Static Webpage Design
  
 A single-page static site focused on **semantic structure, visual precision, and layout fundamentals**.
  
 <table>
 <tr>
 <td width="50%">
-**✨ Highlights**
-- Semantic HTML5 (`header`, `nav`, `main`, `section`, `article`, `footer`)
+✨ Highlights
+ 
+- Semantic HTML5 (header,nav,main,section,article,footer)
+
 - Sticky navigation with smooth scroll + scroll-padding offset
+ 
 - CSS Grid auto-fill portfolio card layout
+  
 - Reusable DRY button components
+  
 - Design tokens via CSS custom properties
+ 
 - Lazy-loaded images with fixed dimensions (zero layout shift)
+  
 - Responsive breakpoint at `768px`
 </td>
 <td width="50%">
-**🛠️ Built With**
-`HTML5` · `CSS3` · `CSS Grid` · `Flexbox` · `CSS Variables`
+🛠️ Built With
+HTML5·
+ -CSS3
+ -CSS Grid
+ -Flexbox
+ -CSS Variables
  
 **📂 Path**
 [`/Project-01`](./Project-01)
@@ -63,14 +75,14 @@ A single-page static site focused on **semantic structure, visual precision, and
 </tr>
 </table>
 <br/>
-### 📁 Project 02 — Nexora Digital Landing Page
+📁 Project 02 — Nexora Digital Landing Page
  
 A content-rich, multi-section **agency landing page** demonstrating a scalable design system and accessibility-first markup.
  
 <table>
 <tr>
 <td width="50%">
-**✨ Highlights**
+✨ Highlights
 - Full design-token system — color, fluid type (`clamp()`), spacing scale, radii, shadows
 - Mobile-first responsive design (`768px`, `480px` breakpoints)
 - Pure-CSS hamburger menu (checkbox-hack — **zero JavaScript**)
@@ -80,7 +92,7 @@ A content-rich, multi-section **agency landing page** demonstrating a scalable d
 - Lazy-loaded, dimensioned images throughout
 </td>
 <td width="50%">
-**🛠️ Built With**
+🛠️ Built With
 `HTML5` · `CSS3` · `Mobile-First CSS` · `Google Fonts` · `ARIA`
  
 **📂 Path**
@@ -90,25 +102,28 @@ A content-rich, multi-section **agency landing page** demonstrating a scalable d
 </tr>
 </table>
 <br/>
-### 📁 Project 03 — Interactive Web Elements
+📁 Project 03 — Interactive Web Elements
  
 A hands-on **vanilla JavaScript** project — six self-contained interactive demos covering core DOM manipulation and event-handling patterns.
  
 <table>
 <tr>
 <td width="50%">
-**✨ Highlights**
-- 🌗 Dark/Light mode toggle — persisted via `localStorage`
+✨ Highlights
+
+ - 🌗 Dark/Light mode toggle — persisted via `localStorage`
+
 - 📱 Accessible hamburger menu with `aria-expanded` state
+
 - 👁️ Show/Hide toggle panel (class-based visibility)
 - 🔢 Live counter demonstrating in-memory state management
 - ❓ FAQ accordion — one item open at a time via `querySelectorAll`/`forEach`
 - ✅ Real-time form validation (name length + email regex) with dynamic submit-button state
-- 🔒 `textContent` used throughout instead of `innerHTML` to avoid XSS
+- 🔒 textContent` used throughout instead of `innerHTML` to avoid XSS
 - 🧠 Every feature wrapped in `DOMContentLoaded` and commented with an **Input → Process → Output** breakdown
 </td>
 <td width="50%">
-**🛠️ Built With**
+🛠️ Built With
 `HTML5` · `CSS3` · `JavaScript (ES6+)` · `DOM API` · `localStorage`
  
 **📂 Path**
@@ -118,7 +133,7 @@ A hands-on **vanilla JavaScript** project — six self-contained interactive dem
 </tr>
 </table>
 <br/>
-## 🧰 Tech Stack
+🧰 Tech Stack
  
 <div align="center">
 | Layer | Technologies |
@@ -131,7 +146,7 @@ A hands-on **vanilla JavaScript** project — six self-contained interactive dem
  
 </div>
 <br/>
-## 📂 Folder Structure
+📂 Folder Structure
  
 ```
 Decodelabs/
@@ -152,13 +167,13 @@ Decodelabs/
 ```
  
 <br/>
-## ⚡ Getting Started
+⚡ Getting Started
  
 No build steps, no dependencies — just clone and open.
  
 ```bash
 # Clone the repository
-git clone https://github.com/ameerhamza522040/Decodelabs.git
+git clone https://github.com/ameerhamza522040/Decodelabs-Internship.git
  
 # Move into the repo
 cd Decodelabs
@@ -171,7 +186,7 @@ open index.html                     # macOS
 ```
  
 <br/>
-## 🎯 Key Concepts Practiced
+🎯 Key Concepts Practiced
  
 - Semantic HTML5 & accessibility fundamentals (ARIA, keyboard-friendly interactions)
 - CSS architecture with design tokens & custom properties
@@ -181,16 +196,16 @@ open index.html                     # macOS
 - Form validation and real-time UI feedback
 - Performance-conscious practices (lazy loading, `preconnect`, dimensioned media)
 <br/>
-## 👤 Author
+👤 Author
  
 **Ameer Hamza**
 Software Engineering Student · Frontend Development Intern @ Decodelabs 
  
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ameerhamza522040)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ameer-hamza-051374404)
  
 <br/>
-## 📄 License
+📄 License
  
 This project is intended for educational and internship-submission purposes.
 Feel free to reference it, but please avoid direct copying for your own coursework.
